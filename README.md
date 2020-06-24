@@ -1,6 +1,7 @@
 # terminal-mode.kak
 
 Terminal mode for [Kakoune].
+A mode to manage the various windowing systems.
 
 ## Installation
 

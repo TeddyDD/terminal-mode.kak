@@ -14,7 +14,7 @@ Enter Terminal mode with `enter-user-mode terminal`.
 ## Configuration
 
 ``` kak
-map global user t ': enter-user-mode terminal<ret>' -docstring 'Terminal'
+map global normal <c-w> ': enter-user-mode terminal<ret>' -docstring 'Terminal'
 ```
 
 [Kakoune]: https://kakoune.org

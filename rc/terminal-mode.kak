@@ -50,5 +50,3 @@ provide-module terminal-mode %{
   map -docstring 'Window' global x11 w ': terminal-set global x11 x11-terminal x11-focus<ret>'
 
 }
-
-require-module terminal-mode

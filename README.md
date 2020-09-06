@@ -7,6 +7,10 @@ A mode to manage the various windowing systems.
 
 Add [`terminal-mode.kak`](rc/terminal-mode.kak) to your autoload or source it manually.
 
+``` kak
+require-module terminal-mode
+```
+
 ## Usage
 
 Enter Terminal mode with `enter-user-mode terminal`.

@@ -25,5 +25,5 @@ Enter Terminal mode with `enter-user-mode terminal`.
 ## Configuration
 
 ``` kak
-map global normal -docstring 'Terminal' <c-w> ': enter-user-mode terminal<ret>'
+map -docstring 'Terminal' global normal <c-w> ': enter-user-mode terminal<ret>'
 ```

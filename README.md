@@ -1,9 +1,10 @@
 # terminal-mode.kak
 
 A **Terminal** mode for [Kakoune] to easily switch between the various windowing systems
-([iTerm], [kitty], [Screen], [tmux], [X11]).
+([Alacritty], [iTerm], [kitty], [Screen], [tmux], [X11]).
 
 [Kakoune]: https://kakoune.org
+[Alacritty]: https://github.com/alacritty/alacritty
 [iTerm]: https://iterm2.com
 [kitty]: https://sw.kovidgoyal.net/kitty/
 [Screen]: https://gnu.org/software/screen/

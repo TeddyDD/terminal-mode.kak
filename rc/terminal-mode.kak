@@ -4,12 +4,20 @@ provide-module terminal-mode %{
   declare-user-mode terminal
 
   # Set the terminal
-  # terminal-set <scope> <module> <terminal> <focus>
-  define-command terminal-set -params 4 -docstring 'terminal-set <scope> <module> <terminal> <focus>: Set the terminal' %{
+  # terminal-set <scope> <module> <terminal> [focus]
+  define-command terminal-set -params 3..4 -docstring 'terminal-set <scope> <module> <terminal> [focus]: Set the terminal' %{
     require-module %arg{2}
     alias %arg{1} terminal %arg{3}
-    alias %arg{1} focus %arg{4}
+    try %{
+      alias %arg{1} focus %arg{4}
+    }
   }
+
+  # Alacritty – https://github.com/alacritty/alacritty
+  # https://github.com/alexherbo2/alacritty.kak
+  declare-user-mode alacritty
+  map -docstring 'Alacritty' global terminal a ': enter-user-mode alacritty<ret>'
+  map -docstring 'Window' global alacritty w ': terminal-set global alacritty alacritty<ret>'
 
   # iTerm – https://iterm2.com
   # https://github.com/mawww/kakoune/blob/master/rc/windowing/iterm.kak

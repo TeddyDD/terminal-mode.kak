@@ -17,7 +17,7 @@ provide-module terminal-mode %{
   # https://github.com/alexherbo2/alacritty.kak
   declare-user-mode alacritty
   map -docstring 'Alacritty' global terminal a ': enter-user-mode alacritty<ret>'
-  map -docstring 'Window' global alacritty w ': terminal-set global alacritty alacritty<ret>'
+  map -docstring 'Window' global alacritty w ': terminal-set global alacritty alacritty-terminal<ret>'
 
   # iTerm – https://iterm2.com
   # https://github.com/mawww/kakoune/blob/master/rc/windowing/iterm.kak
